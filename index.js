@@ -1608,7 +1608,7 @@
     var prefer_http = Lampa.Storage.field('online_mod_prefer_http') === true;
     var prefer_mp4 = Lampa.Storage.field('online_mod_prefer_mp4') === true;
     var prox = component.proxy('rezka2');
-    var host = 'https://hdrezka.la/';
+    var host = 'https://hdrezka.la';
     var ref = host + '/';
     var logged_in = Lampa.Storage.get('online_mod_rezka2_status', '') === true && !prox;
     var network_call = logged_in ? network.silent : network['native'];
